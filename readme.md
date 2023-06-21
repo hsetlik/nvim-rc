@@ -49,38 +49,38 @@ The config is all written in Lua and the plugins are managed by [packer](https:/
 
 ## Key Bindings
 
-All the custom key bindings are set in `lua/hayden/core/keymaps.lua`. The "<leader>" key used to preface many of the commands below can be set to any key that doesn't already have a binding in normal mode. By default, this config uses the space bar.
+All the custom key bindings are set in `lua/hayden/core/keymaps.lua`. The "\<leader\>" key used to preface many of the commands below can be set to any key that doesn't already have a binding in normal mode. By default, this config uses the space bar.
 
 ### Window Navigation
 
-- "<leader>sv": open a new vertical editor window
-- "<leader>sx": close the current editor window
-- "<leader>e": toggle the file tree on/off
+- "\<leader\>sv": open a new vertical editor window
+- "\<leader\>sx": close the current editor window
+- "\<leader\>e": toggle the file tree on/off
 
 ### Fuzzy Finding
 
-- "<leader>ff": search for file name
-- "<leader>fs": search for a string in the current directory
-- "<leader>fc": search for the string under the cursor in the current directory
-- "<leader>fb": list currently open buffers
-- "<leader>fh": show Telescope help tags
+- "\<leader\>ff": search for file name
+- "\<leader\>fs": search for a string in the current directory
+- "\<leader\>fc": search for the string under the cursor in the current directory
+- "\<leader\>fb": list currently open buffers
+- "\<leader\>fh": show Telescope help tags
 
 ### CMake
 
-- "<leader>cg": start configure on current CMakeLists.txt
-- "<leader>bm": switch between build configurations (i.e. Debug and Release mode)
-- "<leader>cx": cancel current CMake task
-- "<leader>ct": select the build target
-- "<leader>cr": run current target
-- "<leader>cb": build current target
+- "\<leader\>cg": start configure on current CMakeLists.txt
+- "\<leader\>bm": switch between build configurations (i.e. Debug and Release mode)
+- "\<leader\>cx": cancel current CMake task
+- "\<leader\>ct": select the build target
+- "\<leader\>cr": run current target
+- "\<leader\>cb": build current target
 
 ### Git
 
-- "<leader>gc": open git commit dialog
-- "<leader>gb": open git branch dialog
-- "<leader>gm": open git merge dialog
-- "<leader>gp": open git pull dialog
-- "<leader>gP": open git push dialog
+- "\<leader\>gc": open git commit dialog
+- "\<leader\>gb": open git branch dialog
+- "\<leader\>gm": open git merge dialog
+- "\<leader\>gp": open git pull dialog
+- "\<leader\>gP": open git push dialog
 
 ### LSP
 
@@ -90,10 +90,10 @@ All the custom key bindings are set in `lua/hayden/core/keymaps.lua`. The "<lead
 - "gD": jump to declaration
 - "gd": jump to definition
 - "gi": jump to implementation
-- "<leader>ca": see available code actions for current line
-- "<leader>rs": rename symbol (Editor's Note: this is the most useful key binding I've ever used in any text editor. It's also much faster than smart renaming in a heavy IDE.)
-- "<leader>D": see diagnostics for current line
-- "<leader>d": see diagnostics for symbol under cursor
+- "\<leader\>ca": see available code actions for current line
+- "\<leader\>rs": rename symbol (Editor's Note: this is the most useful key binding I've ever used in any text editor. It's also much faster than smart renaming in a heavy IDE.)
+- "\<leader\>D": see diagnostics for current line
+- "\<leader\>d": see diagnostics for symbol under cursor
 - "[d": jump to previous diagnostic
 - "]d": jump to next diagnostic
 - "K": show popup with documentation for symbol under cursor

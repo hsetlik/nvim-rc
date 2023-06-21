@@ -26,4 +26,6 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
+-- this just matches the dash as part of the word for commands using 'w' and 'W'
+-- useful for renaming files and writing really shitty Python
 opt.iskeyword:append("-")

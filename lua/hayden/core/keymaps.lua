@@ -4,7 +4,7 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
-keymap.set("n", "<leader>sv", "<C-x>v") -- split window vertically
+keymap.set("n", "<leader>sv", ":vsplit<CR>") -- split window vertically
 keymap.set("n", "<leader>sx", ":close<CR>") -- close split window
 
 -- nvim-tree
@@ -29,5 +29,5 @@ keymap.set("n", "<leader>cb", "<cmd>Task start cmake_kits build<cr>") -- build c
 keymap.set("n", "<leader>gc", "<cmd>Neogit commit<cr>") -- open the commit popup
 keymap.set("n", "<leader>gb", "<cmd>Neogit branch<cr>") -- open the branch popup
 keymap.set("n", "<leader>gm", "<cmd>Neogit merge<cr>") -- open the merge popup
-keymap.set("n", "<leader>gp", "<cmd>Neogit merge<cr>") -- open the pull popup
-keymap.set("n", "<leader>gP", "<cmd>Neogit merge<cr>") -- open the push popup
+keymap.set("n", "<leader>gp", "<cmd>Neogit pull<cr>") -- open the pull popup
+keymap.set("n", "<leader>gP", "<cmd>Neogit push<cr>") -- open the push popup

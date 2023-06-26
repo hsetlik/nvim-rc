@@ -73,7 +73,6 @@ typescript.setup({
 lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	cmd = require("tasks.cmake_kits_utils").currentClangdArgs(),
 })
 
 lspconfig["cmake"].setup({

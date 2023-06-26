@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["cmake-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/cmake-tools.nvim",
+    url = "https://github.com/Civitasv/cmake-tools.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -158,16 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
-  },
-  ["neovim-additional-tasks"] = {
-    loaded = true,
-    path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/neovim-additional-tasks",
-    url = "https://github.com/DoDoENT/neovim-additional-tasks"
-  },
-  ["neovim-tasks"] = {
-    loaded = true,
-    path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/neovim-tasks",
-    url = "https://github.com/Shatur/neovim-tasks"
   },
   ["null-ls.nvim"] = {
     loaded = true,

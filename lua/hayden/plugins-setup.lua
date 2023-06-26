@@ -82,15 +82,8 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
-	-- tasks (handles build systems like CMake)
-	use({
-		"DoDoENT/neovim-additional-tasks",
-		requires = {
-			{ "Shatur/neovim-tasks", requires = { "nvim-lua/plenary.nvim" } },
-			"neovim/nvim-lspconfig",
-		},
-	})
-
+	-- cmake
+	use("Civitasv/cmake-tools.nvim")
 	-- formatting and linting
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")

@@ -13,6 +13,11 @@ if not configstatus then
 	return
 end
 
+local cmakestatus, cmake = pcall(require, "cmake-tools")
+if not configstatus then
+	return
+end
+
 local lualine_nightfly = require("lualine.themes.nightfly")
 local new_colors = {
 	blue = "#65D1FF",
@@ -26,12 +31,20 @@ local function cmakeStatus()
 	local cmake_config = ProjectConfig:new()["cmake_kits"]
 	local cmakelists_dir = cmake_config.source_dir and cmake_config.source_dir or vim.loop.cwd()
 	if (Path:new(cmakelists_dir) / "CMakeLists.txt"):exists() then
-		local cmakeBuildType = cmake_config.build_type
-		local cmakeKit = cmake_config.build_kit
-		local cmakeTarget = cmake_config.target and cmake_config.target or "all"
+		local cmakeBuildType = cmake.get_build_type()
+		local cmakeKit = cmake.get_kit()
+		local buildTarget = cmake.get_build_target()
+		local launchTarget = cmake.get_launch_target()
 
-		if cmakeBuildType and cmakeKit and cmakeTarget then
-			return "CMake variant: " .. cmakeBuildType .. " kit: " .. cmakeKit .. " target: " .. cmakeTarget
+		if cmakeBuildType and cmakeKit and buildTarget then
+			return "CMake variant: "
+				.. cmakeBuildType
+				.. " Kit: "
+				.. cmakeKit
+				.. " Build target: "
+				.. buildTarget
+				.. " Launch target:"
+				.. launchTarget
 		else
 			return ""
 		end

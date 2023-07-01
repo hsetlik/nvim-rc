@@ -17,14 +17,6 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
--- neovim-tasks (mostly cmake stuff)
-keymap.set("n", "<leader>cg", "<cmd>Task start cmake_kits configure<cr>") -- configure current project
-keymap.set("n", "<leader>cm", "<cmd>Task set_module_param cmake_kits build_type<cr>") -- set build mode
-keymap.set("n", "<leader>cx", "<cmd>Task cancel<cr>") -- cancel the current task
-keymap.set("n", "<leader>ct", "<cmd>Task set_module_param cmake_kits target<cr>") -- set build target
-keymap.set("n", "<leader>cr", "<cmd>Task start cmake_kits run<cr>") -- run current
-keymap.set("n", "<leader>cb", "<cmd>Task start cmake_kits build<cr>") -- build current
-
 -- git
 keymap.set("n", "<leader>gc", "<cmd>Neogit commit<cr>") -- open the commit popup
 keymap.set("n", "<leader>gb", "<cmd>Neogit branch<cr>") -- open the branch popup
@@ -32,3 +24,11 @@ keymap.set("n", "<leader>gm", "<cmd>Neogit merge<cr>") -- open the merge popup
 keymap.set("n", "<leader>gp", "<cmd>Neogit pull<cr>") -- open the pull popup
 keymap.set("n", "<leader>gP", "<cmd>Neogit push<cr>") -- open the push popup
 keymap.set("n", "<leader>gs", "<cmd>Neogit <cr>") -- open the status popup
+
+-- cmake-tools
+keymap.set("n", "<leader>cg", "<cmd>CMakeGenerate -G Xcode<cr>") --generate the current project (todo: set up a way to configure args per project and not hard code them here)
+keymap.set("n", "<leader>cT", "<cmd>CMakeSelectBuildType<cr>") -- set the build type
+keymap.set("n", "<leader>cB", "<cmd>CMakeSelectBuildTarget<cr>") -- set the build target
+keymap.set("n", "<leader>cL", "<cmd>CMakeSelectLaunchTarget<cr>") -- set the launch target
+keymap.set("n", "<leader>cb", "<cmd>CMakeBuild<cr>") -- cmake build
+keymap.set("n", "<leader>cr", "<cmd>CMakeRun<cr>") -- cmake run

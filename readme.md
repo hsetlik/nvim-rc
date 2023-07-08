@@ -36,15 +36,14 @@ The config is all written in Lua and the plugins are managed by [packer](https:/
 - "neovim/nvim-lspconfig": For configuring LSP servers
 - "williamboman/mason-lspconfig.nvim": Links Mason with lspconfig
 - "hrsh7th/cmp-nvim-lsp": Allows LSP to show up in autocomplete
-- "DoDoENT/neovim-additional-tasks": Allows us to configure tasks (used mostly for CMake)
-- "Shatur/neovim-tasks": Dependency of additional-tasks
 - "jose-elias-alvarez/null-ls.nvim": formatting/linting
 - "jayp0521/mason-null-ls.nvim": lets null-ls work with LSP via Mason
+- "Civitasv/cmake-tools.nvim": CMake utilities, similar to the VSCode plugin of the same name
 - "nvim-treesitter/nvim-treesitter": Syntax highlighting
 - "windwp/nvim-autopairs": Automatically add `)`, `}`, `"`, etc.
 - "windwp/nvim-ts-autotag": Same as above for xml tags
 - "lewis6991/gitsigns.nvim": Color-codes git changes along left edge of the editor
-- "TimUntersberger/neogit": Git popup menus
+- "NeogitOrg/neogit": Git popup menus
 - "sindrets/diffview.nvim": Git diff view
 
 ## Key Bindings

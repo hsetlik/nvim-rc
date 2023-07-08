@@ -24,11 +24,15 @@ keymap.set("n", "<leader>gm", "<cmd>Neogit merge<cr>") -- open the merge popup
 keymap.set("n", "<leader>gp", "<cmd>Neogit pull<cr>") -- open the pull popup
 keymap.set("n", "<leader>gP", "<cmd>Neogit push<cr>") -- open the push popup
 keymap.set("n", "<leader>gs", "<cmd>Neogit <cr>") -- open the status popup
+keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<cr>") -- open diff view
+keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<cr>") -- close diff view
 
 -- cmake-tools
-keymap.set("n", "<leader>cg", "<cmd>CMakeGenerate -G Xcode<cr>") --generate the current project (todo: set up a way to configure args per project and not hard code them here)
-keymap.set("n", "<leader>cT", "<cmd>CMakeSelectBuildType<cr>") -- set the build type
+keymap.set("n", "<leader>cg", "<cmd>CMakeGenerate<cr>") --generate the current project (todo: set up a way to configure args per project and not hard code them here)
+keymap.set("n", "<leader>bt", "<cmd>CMakeSelectBuildType<cr>") -- set the build type
 keymap.set("n", "<leader>cB", "<cmd>CMakeSelectBuildTarget<cr>") -- set the build target
-keymap.set("n", "<leader>cL", "<cmd>CMakeSelectLaunchTarget<cr>") -- set the launch target
+keymap.set("n", "<leader>cl", "<cmd>CMakeSelectLaunchTarget<cr>") -- set the launch target
 keymap.set("n", "<leader>cb", "<cmd>CMakeBuild<cr>") -- cmake build
 keymap.set("n", "<leader>cr", "<cmd>CMakeRun<cr>") -- cmake run
+keymap.set("n", "<leader>cx", "<cmd>CMakeStop<cr>") -- stop current CMake task
+keymap.set("n", "<leader>cc", "<cmd>CMakeClean<cr>") -- stop current CMake task

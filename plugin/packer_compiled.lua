@@ -231,6 +231,11 @@ _G.packer_plugins = {
     path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/hayden/.local/share/nvim/site/pack/packer/start/vim-maximizer",

@@ -15,11 +15,7 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - Auto-complete with full LSP support
 - Ability to run CMake configure and build commands from inside the editor
 
-## Plugins
-
-The config is all written in Lua and the plugins are managed by [Lazy](https://github.com/folke/lazy.nvim)
-
-## Keymaps
+## Keymap Cheat Sheet
 
 ### Window Splitting
 
@@ -40,6 +36,22 @@ The config is all written in Lua and the plugins are managed by [Lazy](https://g
 - "<leader>fs": Search for string in cwd
 - "<leader>fc": Search for string under cursor in cwd
 
+### LSP
+
+- "gR": Show references in Telescope
+- "gd": Jump to declaration
+- "gD": Show declaration in Telescope
+- "gi": Show implementations in Telescope
+- "gt": Show type definitions in Telescope
+- "<leader>ca": Show available code actions
+- "<leader>rn": Smart rename
+- "<leader>D": Show buffer diagnostics in Telescope
+- "<leader>d": Show line diagnostics in Telescope
+- "[d": Jump to previous diagnostic
+- "]d": Jump to next diagnostic
+- "K": Show documentation for symbol under cursor if available
+- "<leader>rs": Restart LSP
+
 ### CMake
 
 - "<leader>cg": CMakeGenerate
@@ -55,3 +67,29 @@ The config is all written in Lua and the plugins are managed by [Lazy](https://g
 - "<leader>gc": Commit
 - "<leader>gp": Push
 - "<leader>gd": View diff of current file
+
+### Formatting
+
+- "<leader>fm": Format current file or selection
+
+## Plugins
+
+The config is all written in Lua and the plugins are managed by [Lazy](https://github.com/folke/lazy.nvim)
+The current set of plugins installed:
+
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim): An IDE-like file tab bar along the editor's top edge
+- [cmake-tools.nvim](https://github.com/Civitasv/cmake-tools.nvim): CMake configure/build integration for Neovim. Similar to the VSCode plugin of the same name.
+- [vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors): A nice color scheme
+- [conform.nvim](https://github.com/stevearc/conform.nvim): Handles all things formatting and formatters
+- [fugitive.vim](https://github.com/tpope/vim-fugitive): All the git integration you'll ever want
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim): Shows the git status of each line along the left edge of the editor
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Easy-to-customize bottom status bar
+- [mason.nvim](https://github.com/williamboman/mason.nvim): Package manager for language servers, linters, and formatters
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs): You'll never guess what this does
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): Lua-based autocompletion plugin
+- [nvim-lint](https://github.com/mfussenegger/nvim-lint): Linting plugin that plays nice with LSP
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): Manages and configures LSP
+- [nvim-surround](https://github.com/kylechui/nvim-surround): Neat utilities for delimiter pairs (quotes, brackets, HTML tags, etc)
+- [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua): File tree of choice
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter): Treesitter
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim): Fuzzy finder and search interface

@@ -19,22 +19,22 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 
 ### Window Splitting
 
-- "*leader*sv": Split window vertically
-- "*leader*sx": Close split window
+- "`leader`sv": Split window vertically
+- "`leader`sx": Close split window
 
 ### File Tree
 
-- "*leader*e": Toggle file tree
+- "`leader`e": Toggle file tree
 - "a": Create file
 - "r": Rename file
 - "d": Delete file
 
 ### Fuzzy Finding
 
-- "*leader*ff": Search for files in cwd
-- "*leader*fr": Search for recent files
-- "*leader*fs": Search for string in cwd
-- "*leader*fc": Search for string under cursor in cwd
+- "`leader`ff": Search for files in cwd
+- "`leader`fr": Search for recent files
+- "`leader`fs": Search for string in cwd
+- "`leader`fc": Search for string under cursor in cwd
 
 ### LSP
 
@@ -43,34 +43,34 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - "gD": Show declaration in Telescope
 - "gi": Show implementations in Telescope
 - "gt": Show type definitions in Telescope
-- "*leader*ca": Show available code actions
-- "*leader*rn": Smart rename
-- "*leader*D": Show buffer diagnostics in Telescope
-- "*leader*d": Show line diagnostics in Telescope
+- "`leader`ca": Show available code actions
+- "`leader`rn": Smart rename
+- "`leader`D": Show buffer diagnostics in Telescope
+- "`leader`d": Show line diagnostics in Telescope
 - "[d": Jump to previous diagnostic
 - "]d": Jump to next diagnostic
 - "K": Show documentation for symbol under cursor if available
-- "*leader*rs": Restart LSP
+- "`leader`rs": Restart LSP
 
 ### CMake
 
-- "*leader*cg": CMakeGenerate
-- "*leader*cB": Select build target
-- "*leader*cb": Build current target
-- "*leader*cR": Select run target
-- "*leader*cr": Run current target
+- "`leader`cg": CMakeGenerate
+- "`leader`cB": Select build target
+- "`leader`cb": Build current target
+- "`leader`cR": Select run target
+- "`leader`cr": Run current target
 
 ### Git
 
-- "*leader*gA": Stage all changes
-- "*leader*gs": View git status info
-- "*leader*gc": Commit
-- "*leader*gp": Push
-- "*leader*gd": View diff of current file
+- "`leader`gA": Stage all changes
+- "`leader`gs": View git status info
+- "`leader`gc": Commit
+- "`leader`gp": Push
+- "`leader`gd": View diff of current file
 
 ### Formatting
 
-- "*leader*fm": Format current file or selection
+- "`leader`fm": Format current file or selection
 
 ## Plugins
 

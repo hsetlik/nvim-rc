@@ -17,7 +17,13 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
+				cpp = { "clang_format" },
 				cmake = { "cmake_format" },
+			},
+			formatters = {
+				clang_format = {
+					args = { "-style=file" },
+				},
 			},
 			format_on_save = {
 				lsp_fallback = true,

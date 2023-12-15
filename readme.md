@@ -17,14 +17,20 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 
 ## Keymap Cheat Sheet
 
-### Window Splitting
+### Window Splitting and Tabs
 
 - "`leader`sv": Split window vertically
 - "`leader`sx": Close split window
+- "`leader`x": Close current tab
+- "`leader`xo": Close all other tabs
+- "`leader`=": Next tab
+- "`leader`-": Previous tab
 
 ### File Tree
 
 - "`leader`e": Toggle file tree
+- "`leader`ec": Show current file in tree
+- "`Ctrl`t": Open selected result in new tab
 - "a": Create file
 - "r": Rename file
 - "d": Delete file
@@ -35,6 +41,8 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - "`leader`fr": Search for recent files
 - "`leader`fs": Search for string in cwd
 - "`leader`fc": Search for string under cursor in cwd
+- "`Ctrl`t": Open selected result in new tab
+- "`Ctrl`v": Open selected result in vertical split
 
 ### LSP
 

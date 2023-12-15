@@ -26,6 +26,16 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - "`leader`=": Next tab
 - "`leader`-": Previous tab
 
+### Comments
+
+- "gcc": Toggle current line as single-line comment
+- "gbc": Toggle current line as multi-line comment
+- "gc": Toggle selection as single-line
+- "gb": Toggle selection as multi-line
+- "gco": Insert comment on previous line
+- "gcO": Insert comment on next line
+- "gcA": Insert comment at the end of the current line
+
 ### File Tree
 
 - "`leader`e": Toggle file tree

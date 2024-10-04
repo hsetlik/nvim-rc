@@ -97,7 +97,7 @@ return {
 		})
 
 		-- configure typescript server with plugin
-		lspconfig["tsserver"].setup({
+		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
@@ -141,6 +141,12 @@ return {
 				on_attach(c, b)
 				keymap.set("n", "<leader>hs", ":ClangdSwitchSourceHeader<CR>")
 				keymap.set("n", "<leader>hv", ":ClangdSwitchSourceHeaderVSplit<CR>")
+			end,
+			on_new_config = function(newConfig, currentCwd)
+				local status, cmake = pcall(require, "cmake-tools")
+				if status then
+					cmake.clangd_on_new_config(newConfig)
+				end
 			end,
 		})
 

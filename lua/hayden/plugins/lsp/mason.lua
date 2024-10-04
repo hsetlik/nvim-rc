@@ -27,11 +27,12 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver",
 				"html",
 				"cssls",
 				"lua_ls",
 				"clangd",
+				"ts_ls",
+				"cmake",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -43,7 +44,6 @@ return {
 				"stylua", -- lua formatter
 				"eslint_d", -- js linter
 				"clang-format", -- c/cpp formatter
-				"cmakelang",
 			},
 		})
 	end,

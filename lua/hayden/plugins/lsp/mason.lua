@@ -28,7 +28,7 @@ return {
 			-- list of servers for mason to install
 			ensure_installed = {
 				"html",
-				"cssls",
+				"ast_grep",
 				"lua_ls",
 				"clangd",
 				"ts_ls",

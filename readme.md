@@ -70,6 +70,17 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - "K": Show documentation for symbol under cursor if available
 - "`leader`rs": Restart LSP
 
+### Debugging
+
+- "<F9>": Toggle breakpoint at current line
+- "<F1>": Expand object under cursor
+- "<F5>": Continue
+- "<F4>": Terminate debugger
+- "<F10>": Step over
+- "<F11>": Step into
+- "<F12>": Step out
+- "`leader`ds": Show current debugger scopes
+
 ### CMake
 
 - "`leader`cg": CMakeGenerate
@@ -77,6 +88,7 @@ In making the move from VSCode to Neovim, I wanted to take advantage of Neovim's
 - "`leader`cb": Build current target
 - "`leader`cR": Select run target
 - "`leader`cr": Run current target
+- "`leader`cd": Debug current target
 
 ### Git
 
@@ -104,6 +116,7 @@ The current set of plugins installed:
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Easy-to-customize bottom status bar
 - [mason.nvim](https://github.com/williamboman/mason.nvim): Package manager for language servers, linters, and formatters
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs): You'll never guess what this does
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap): Plugin for debugging within neovim
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): Lua-based autocompletion plugin
 - [nvim-lint](https://github.com/mfussenegger/nvim-lint): Linting plugin that plays nice with LSP
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): Manages and configures LSP

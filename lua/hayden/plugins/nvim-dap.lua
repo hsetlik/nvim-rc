@@ -50,6 +50,7 @@ return {
 		}
 	end,
 	config = function()
+		local dap = require("dap")
 		-- Signs
 		for _, group in pairs({
 			"DapBreakpoint",
@@ -75,6 +76,6 @@ return {
 
 		-- Adapters
 		-- C, C++, Rust
-		require("dap.codelldb")
+		require("hayden.plugins.dap.codelldb")
 	end,
 }

@@ -458,6 +458,7 @@ return {
 		keymap.set("n", "<leader>cB", "<cmd>CMakeSelectBuildTarget<cr>", { desc = "Select CMake build target" })
 		keymap.set("n", "<leader>cb", "<cmd>CMakeBuild<cr>", { desc = "Build current target" })
 		keymap.set("n", "<leader>cR", "<cmd>CMakeSelectLaunchTarget<cr>", { desc = "Select CMake Launch target" })
+		keymap.set("n", "<leader>cd", "<cmd>CMakeDebug<cr>", { desc = "Debug current launch target" })
 		keymap.set("n", "<leader>cr", "<cmd>CMakeRun<cr>", { desc = "Run current launch target" })
 	end,
 }

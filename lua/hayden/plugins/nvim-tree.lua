@@ -18,6 +18,16 @@ return {
 				width = 35,
 				relativenumber = true,
 			},
+			diagnostics = {
+				enable = true,
+				icons = {
+					hint = "",
+					info = "",
+					warning = "",
+					error = "",
+				},
+				show_on_dirs = true,
+			},
 			-- change folder arrow icons
 			renderer = {
 				indent_markers = {
@@ -29,6 +39,16 @@ return {
 							arrow_closed = "", -- arrow when folder is closed
 							arrow_open = "", -- arrow when folder is open
 						},
+					},
+					show = {
+						file = true,
+						folder = true,
+						folder_arrow = true,
+						git = true,
+						modified = true,
+						hidden = false,
+						diagnostics = true,
+						bookmarks = true,
 					},
 				},
 			},

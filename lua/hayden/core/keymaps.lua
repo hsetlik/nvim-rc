@@ -5,6 +5,7 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear highlighting/vim search
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>sv", ":vsplit<CR>") -- split window vertically
+keymap.set("n", "<leader>sh", ":split<CR>") -- split window horizontally
 keymap.set("n", "<leader>sx", ":close<CR>") -- close split window
 
 keymap.set("n", "<leader>x", ":tabclose<CR>") -- close current tab
